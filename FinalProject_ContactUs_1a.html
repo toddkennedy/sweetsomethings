@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> SweetSomething's </title>
+      <link type="text/css" rel="stylesheet" href="FinalProject_ContactUs_1_CSS.css" >
+      <script type="text/javascript" src="FinalProject_ContactUs_1.js" > </script>
+  </head>
+   <body onload="changeWidth()">
+    <div class="main_box" id="w1">
+
+     <div class="top_box">
+       <div id="top_box1"> <img class="small_img" src="Images/stock-photo-20694377-contact-us.jpg" alt="Colorful Contact Us sign" > </div>
+       <div id="top_box2"><p class="p_top" > SweetSomething's <br> <span style="color: brown">Chocolate</span> and
+	   <span Style="color:red">C</span><span Style="color:yellow">a</span><span style="color:green">n</span><span Style="color:blue">d</span><span Style="color:orange">y</span> Shop </p></div>
+       <div id="top_box3"><img class="small_img" src="Images/stock-photo-2768897-sweet-little-house.jpg" alt="sweet little house" > </div>
+	 </div>
+
+   <div class="table" >
+  <table>
+    <tr>
+    <td><a href="https://toddkennedy.github.io/sweetsomethings/FinalProject_Home_1a.html" style="color: lightgreen"> Home </a></td>
+    <td><a href="https://toddkennedy.github.io/sweetsomethings/FinalProject_Chocolate_1a.html" style="color: lightgreen"> Chocolates </a></td>
+    <td><a href="https://toddkennedy.github.io/sweetsomethings/FinalProject_Candy_1a.html" style="color: lightgreen"> Candy  </a></td>
+    <td><a href="https://toddkennedy.github.io/sweetsomethings/FinalProject_ContactUs_1a.html" style="color: lightgreen"> Contact Us </a></td>
+      </tr>
+  </table>
+   </div>
+                <!-- Change images -->
+       <center> <!-- for-loop and if..else if..else statements code for Final Project requirements is on javascript external page FinalProject_ContactUs_1.js file -->
+		<div style="padding: 0px 0px 30px 0px">
+         <img src="Images/img_1.jpg"  onmouseover="worksOver(1)" onmouseout="worksOut()" alt="Home Sweet Home" >
+         <img src="Images/img_2.jpg"  onmouseover="worksOver(2)" onmouseout="worksOut()" alt="Sweet Something's Shop with open sign" >
+		 <img src="Images/img_3.jpg"  onmouseover="worksOver(3)" onmouseout="worksOut()" alt="Candy Shop with sweet goodies" >
+		 <img src="Images/img_4.jpg"  onmouseover="worksOver(4)" onmouseout="worksOut()" alt="Candy Shop best in town" >
+		 <img src="Images/img_5.jpg"  onmouseover="worksOver(5)" onmouseout="worksOut()" alt="100 Percent Natural Candy Shop" >
+		 <img src="Images/img_6.jpg"  onmouseover="worksOver(6)" onmouseout="worksOut()" alt="Life Is Sweet" >
+        </div>
+       </center>
+
+	 <div class="div1">
+
+         <div class="div2">
+          <img id="img_1" src="Images/stock-photo-20436670-boy-smiling-after-hitting-pinata.jpg" alt="Kid hitting a pinata and candy going all over the place.">
+	     </div>
+
+ 	    <div class="div3">
+	      <p> SweetSomething's Chocolate and Candy Shop <br>
+		  <p> 123 Sweet Tooth Lane <br>
+		  <p> Albany, New York 12222 <br><br>
+		  <p> 1-800-SOO-SWEET <br></p>
+          <a target="_blank" href="https://weblogin.albany.edu/idp2/Authn/UserPassword" ><p> sweetsomethings@albany.edu </p></a><br>
+          <a target="_blank" href="https://www.facebook.com/sosewsomething">
+		  <img src="Images/find-us-on-facebook_logo.gif" alt="Find us on Facebook" style="width: 125px; height: 50px;">
+		  </a>
+		</div>
+
+        <div class="div4">                       <!-- Form Validation: requirement for Final Project -->
+		 <form name="validation" onSubmit="return checkbae()">
+           <p id="cid1" style="font-size: 20px" > To subscribe to our monthly advertiser please input your name and a valid email address: </p>
+           <p id="cid2" style="font-size: 17px"> First Name: <input name="firstName" type="text"> </p>
+           <p id="cid3" style="font-size: 17px" > Last Name: <input name="lastName" type="text"> </p>
+           <p id="cid4" style="font-size: 17px" > Email: <input type="text" size=18 name="emailcheck"> </p>
+           <input type="submit" value="Subscribe">
+         </form>
+
+                                                 <!-- Change Background colors in div in class: main_box -->
+		 <p style="font-size: 20px" id="pid"> Change the background color of this webpage to purple or white? </p>
+          <button id="myBtn" style="background-color: purple; color: white"> Purple </button>  <!--  Event Listener function: requirement for Final Project -->
+          <button onclick="myFunction1(w1, pid, cid1, cid2, cid3, cid4)" style="color: purple"> White </button>
+          <button onclick="myFunction2(w1, pid, cid1, cid2, cid3, cid4)" style="background-color: gold; color: purple;"> Gold </button>
+        </div>
+
+<script>
+//      Event Listener: requirement for Final Project
+//        This function is placed here in the HTML file because it did not work when placed in javascript(js) file
+ document.getElementById("myBtn").addEventListener("click", function() {  // Event Listener function: requirement for Final Project
+    myFunction(w1, pid, cid1, cid2, cid3, cid4);
+});
+
+</script>
+
+     </div>
+
+         <footer class="bottom">
+		  <p class="p_bottom" > 2015 SweetSomething's Chocolate and Candy Shop <br>
+		                        Images from www.istockphoto.com <br>
+								Email Validation by www.javascriptkit.com </p>
+	     </footer>
+
+ </div>
+ </body>
+</html>
